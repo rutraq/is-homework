@@ -1,4 +1,6 @@
-var name = String(prompt('Введите ФИО')),
+var secondName = String(prompt('Введите вашу фамилию')),
+    name = String(prompt('Введите ваше имя')),
+    otchestvo = String(prompt('Введите ваше отчество')),
     age = Number(prompt('Введите ваш возраст')),
     ageInDays,
     ageAfter5 = age + 5,
@@ -9,7 +11,7 @@ var name = String(prompt('Введите ФИО')),
 gender1 != '' ? gender = 'мужской' : gender = 'женский';
 ageInDays = age * 365;
 age < 57 ? pensiya = 'нет' : pensiya = 'да';
-alert(`ваше ФИО: ${name} 
+alert(`ваше ФИО: ${secondName} ${name} ${otchestvo} 
 ваш возраст в годах: ${age}
 ваш возраст в днях: ${ageInDays}
 через 5 лет вам будет: ${ageAfter5}
